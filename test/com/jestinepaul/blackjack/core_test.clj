@@ -22,7 +22,7 @@
                         (- bet))))))
 
 (deftest blackjack-push
-  (testing "Player and Dealer get a blackjack"
+  (testing "Player and Dealer both get a blackjack"
     (with-redefs [card/shoe (ref '({:rank "10"} {:rank "A"}
                                    {:rank "A"} {:rank "K"}))]
                  (is (= (core/play-round bet)
@@ -131,7 +131,7 @@
                         bet)))))
 
 (deftest payout-calcuation
-  (testing "Payout Calucation"
+  (testing "Payout Calculation"
     (is
       (=
         (core/calculate-payout 18 20 bet)
