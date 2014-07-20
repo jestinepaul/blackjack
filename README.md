@@ -1,5 +1,7 @@
 # Blackjack
 
+[![Build Status](https://travis-ci.org/jestinepaul/blackjack.svg?branch=master)](https://travis-ci.org/jestinepaul/blackjack)
+
 An implementation of blackjack written in clojure.
 
 ## Usage
